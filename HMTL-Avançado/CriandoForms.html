@@ -1,0 +1,102 @@
+<html>
+ <head>
+  <title>Formulario</title>
+ </head>
+
+ <body>
+  <form action='haswolinsk12@gmail.com' method='get'>
+   <label>input padrao: </label>
+   <input type='text' name='exemplo' size='20' maxlenght='50'>
+   <br><br>
+   <label>Nome: </label>
+   <input type='text' name='nome' size='25' maxlenght='50'>
+   <br><br>
+   <label>Estado: </label>
+   <input type='text' name='uf' size='1' maxlenght='2'>
+   
+  </form>
+
+  <br><hr><br>
+
+  <form action='haswolinsk12@gmail.com' method='get'>
+   <label>Nome: </label>
+   <input type='text' name='nome' size='25' maxlenght='50'>
+   <br><br>
+   <label>N° do cartão de credito </label>
+   <input type='text' name='cartao' size='20'>
+   <br><br>
+   <label>Senha: </label>
+   <input type='password' name='senha' size='10'>
+   <br><br>
+   <p>Selecione a bandeira do cartão de credito: <br><input type='radio' name='selecionar-cartao' checked>VISA
+   <br><input type='radio' name='selecionar-cartao'>MASTERCARD</p>
+   <label>Selecione o horário de entrega: <br></label>
+   <input type='checkbox' name='horario1' size='1'>8h às 12h<br>
+   <input type='checkbox' name='horario2' size='2'>13h às 15h<br>
+   <input type='checkbox' name='horario2' size='3'>16h às 18h
+   <br><br>
+   <label>Endereço: </label>
+   <input type='text' name='end' size='30'>
+   <br><br>
+   <label>Referência: <br></label>
+   <textarea name='ref' rows='2' cols='40'></textarea>
+   <br><br>
+   <input type='submit' value='Enviar'> <input type='reset' value='Limpar'><input type='hidden' name="cpf" value="verdadeiro">
+
+  </form>
+
+  <br><hr><br>
+
+  <form>
+   <h3>EXEMPLO DE LISTA DE OPÇÕES<h3>
+    <h4>Escolha a cidade que deseja conhecer</h4>
+     <form>
+      <select multiple name='cidades'>
+       <option>Londres 
+       <option>Paris
+       <option>Roma 
+       <option>Madri
+      </select>
+
+      <select name='cidades' size='5'>
+       <option>Londres 
+       <option>Paris
+       <option>Roma 
+       <option>Madri
+      </select>
+
+      <select name='pais'>
+       <option selected value='valor1'>Brasil
+       <option value='valor2'>EUA
+       <option value='valor3'>Argentina
+       <option value='valor4'>Inglaterra
+      </select>
+  </form> 
+
+  <form>
+   <h3>Matricula</h3>
+    <label>Matricula: </label>
+    <input type="number" name="matricula" id="matricula" placeholder="Digite sua matricula">
+   <h3>Nome</h3>
+    <label>Nome: </label>
+    <input type="text" name="nome" id="nome" placeholder="Digite o nome completo">
+   <h3>Data de Nascimento</h3>
+    <label>Data: </label>
+    <input type="date" name="data" id="data">
+   <h3>Email</h3>
+    <label>Email: </label>
+    <input type="email" name="email" id="email">
+   <h3>Telefone Celular</h3>
+    <label>Telefone: </label>
+    <input type="tel" name="telefone" id="telefone">
+  </form>
+
+  
+  <p> form action='url' vai indicar onde os dados do formulario sao processados</p>
+  <p> o method tem duas opções o 'post' e o 'get'. o post serve como transmissão e conversação de dados, ja o get funciona como leitura de dados.</p>
+  <p> tipos de campos para o input: type(o tipo do input), value(especifica o valor inicial de controle), name(nomeia para q o script possa manipular), maxlenght(numero maximo de carcteres), checked(serve para mostrar se o botao esta selecionado), size(especifica o tamanho inicial do controle)</p>
+
+
+
+ </body>
+</html>

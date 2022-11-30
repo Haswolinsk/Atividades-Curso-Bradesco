@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <script>
+        var js_msg = 1;
+        while (js_msg <=10){
+            document.write('',js_msg,'°');
+            document.write('...e o contador e vai subindo <br>');
+            js_msg++;
+        }
+
+        document.write('<hr>')
+
+        /* var js_contador=1;
+        var js_resposta=true;
+        while(js_resposta == true){
+            document.write('<p>'+js_contador+ '... e o contador vai subindo...');
+            js_contador ++
+            js_resposta = window.confirm('Deseja continuar?');
+        } */
+
+        var js_num;
+        document.write('<p>Apresentação dos valores acumulados para js_num=1 e menor ou igual a 10 incrementando a variavel de +=2');
+        document.write('<p>(Note que o limite irá ate o 9, pois 9+2=11, portanto sera maior doq 10)');
+
+        for (js_num = 0; js_num <=10; js_num++){
+            document.write('<p>', js_num);            
+        }
+        
+    </script>
+</body>
+</html>

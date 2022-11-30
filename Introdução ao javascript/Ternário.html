@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write('<hr>');
+        document.write('ATRIBUIÇÃO DE VARIAVEIS: ');
+        document.write('<p>var js_num = <b>30</b>; (js_num recebe o valor 30)');
+        var js_num = 30;
+
+        document.write('<hr>');
+        document.write('<p>OPERADOR TERNÁRIO <b>(? :)</b> com OPERADORES RELACIONAIS (==, !=, <):');
+        
+        document.write('<p>js_num == 20? "SIM": "NÃO" - Resposta => ');
+            ((js_num==20) ? document.write('SIM'): document.write('NÃO'));
+
+        document.write('<p>js_num != 20? "SIM": "NÃO" - Resposta =>');
+            ((js_num != 20)? document.write('SIM'): document.write('NÃO'));
+        
+        document.write('<p>js_num < 50? "SIM": "NÃO" - Resposta =>');
+            ((js_num < 50)? document.write('SIM'): document.write('NÃO'));
+
+        document.write('<hr>')
+        document.write('OPERADOR TERNÁRIO com EXPRESSÃO ARITIMÉTICA')
+        document.write('<p>(js_num - 20) == 0? "SIM": "NÃO" - Resposta =>');
+            ((js_num-20) == 0)? document.write('SIM + js_num'): document.write('NÃO');
+        
+    </script>
+
+<!-- 
+    operador ternario:
+    [elemento para teste]? [resultado se verdadeiro]:[resultado se n for verdadeiro]
+    ou
+    (<condicao>)?<expressao para resultado verdadeiro>: <expressao para resultado falso>
+        EXEMPLO:
+    var num=30;
+    num ==20? 'sim':'nao'         ->retorna 'nao'
+    num !=20? 'sim':'nao'         ->retorna 'sim'
+    num <50? 'sim':'nao'          ->retorna 'sim'
+    (num -20) == 0? 'sim':'nao'   ->retorna 'nao'
+ -->
+</body>
+</html>

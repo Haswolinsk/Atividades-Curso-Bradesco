@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos Números</title>
+</head>
+<body>
+    <h3>Programa de soma entre dois numeros</h3>
+
+    <form name='FormSoma' action="" method="post">
+        digite o primeiro numero: <input type="number" name="int_n1" /><br>
+        digite o segundo numero: <input type="number" name="int_n2" /><br>
+        <input type="button" name="btn_Soma" value="Somar" onclick="Soma()" />
+        <input type="reset" name="btn_cancela" value="Cancelar" />
+    </form>
+
+    <script>
+        var int_n1;
+        var int_n2;
+        var btn_Soma;
+        var btn_cancela;
+
+        function Soma(){
+            js_n1 = parseInt(document.FormSoma.int_n1.value);
+            js_n2 = parseInt(document.FormSoma.int_n2.value);
+
+            js_Soma = js_n1 + js_n2;
+
+            window.alert('O resultado é '+ js_Soma);
+        }
+        /*  
+        += Soma e atribuição: 'a+ = y' é igual a 'a = a + y'
+        -= Subtração e atribuição: 'a- = y' é igual a 'a = a - y'
+        *= Multiplicação e atribuição: 'a* = y' é igual a 'a = a * y'
+        /= Divisão e atribuição: 'a/ = y' é igual a 'a = a / y'
+        %= Resto e atribuição: 'a% = y' é igual a 'a = a % y'
+        
+        && é o mesmo q 'e' e serve para verificar entre fatores se eles são verdadeiros;
+        ex. if(curso=='DS' && turma!= 0) 
+        || é o mesmo q 'ou' e serve para verificar se pelo menos um dos fatores são verdadeiros;
+        ex. if(curso==’DS’ || turma== 1)
+        ! é o mesmo q 'nao' e vusca um resultado verdadeiro com validação invertida;
+        ex. if( !(curso==’DS’) )
+        */ 
+    </script>
+</body>
+</html>

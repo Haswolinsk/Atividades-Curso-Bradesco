@@ -1,0 +1,35 @@
+<html>
+ <head>
+  <title>Frames</title>
+ </head>
+ 
+ 
+ <frameset cols='25%,*,5%,*,25%'>
+  <frame src='https://www.google.com/'>
+  <frame style='background-color: red;'>
+  <frame style='background-color: yellow;'>
+  <frame style='background-color: red;'>
+  <frame style='background-color: green;'>
+ </frameset>
+ 
+
+ <!--
+src= contem os links para direcionar a pagina q vc quer seguir
+marginwidth= é a margem de largura(px)
+marginheight= é a margem de altura(px)
+scrolling= adiciona uma barra de rolagem
+noresize= impede o usuario de modificar as dimensões de um frame
+-->
+<!--
+_blank= abre o link em uma nova janela
+_self= abre o link no mesmo frame
+_parent= carrega a pagina no frame principal
+_top= carrega a pagina no frame mais alto da pagina
+
+exemplo:
+<a href='exemplo.html' target='_blank'>CLIQUE AQUI</a>
+ou dentro do target pode ter o 'nome' seguido de um dos atributos.
+seria algo como a variavel seguido de onde abrir ela.
+-->
+ 
+</html>

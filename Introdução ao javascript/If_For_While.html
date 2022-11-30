@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If & Else</title>
+</head>
+<body>
+    <h3>Ordem crescente</h3>
+    <script>
+        var js_n1;
+        var js_n2;
+
+        js_n1 = parseInt(window.prompt('Digite o Primeiro numero: '));
+        js_n2 = parseInt(window.prompt('Digite o Segundo numero: '));
+
+        if(js_n1 == js_n2){
+            document.write('Os dois valores digitados são iguais!! ', js_n1, ' = ', js_n2, '.')
+        }else{
+            if (js_n1 < js_n2) {
+            document.write('O ', js_n1, ' é menor doq o ', js_n2);
+            }else{
+            document.write('O ', js_n2, ' é menor doq o ', js_n1);
+            }
+        }
+        
+        if(js_n1 > js_n2){
+            js_n3 = js_n1
+            js_n1 = js_n2
+            js_n2 = js_n3
+        }
+
+        document.write('<br>Classificação em ordem crescente: ', js_n1, ' e ', js_n2);
+    </script>
+</body>
+</html>

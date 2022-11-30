@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name='formCurso' action="" method="post">
+        Digite seu curso: <input type="text" name="f_curso" size="8" maxlength="4" /> (SIST) <br>
+        <input type="button" name="btn_validar" value="Validar" onclick="cadcurso()" />
+        <input type="reset" name='btn_cancelar' value="Cancelar"><br>
+        Codigo do curso: <input type="text" name="f_codcurso" size="15" maxlength="10" />
+    </form>
+    <script>
+        var js_curso;
+        
+        function cadcurso(){
+            js_curso= document.formCurso.f_curso.value;
+            if(js_curso.toUpperCase()== 'SIST'){
+                document.formCurso.f_codcurso.value = 'SIST001/FB';
+            }else{
+                window.alert('Curso Invalido!');
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm()</title>
+</head>
+<body>
+    <script>
+        var js_resposta
+
+        js_resposta= window.confirm('Clique em um dos dois botões');
+
+        if (js_resposta ==true) {
+            document.write('<b>Você acionou o botão OK.</b>');
+            document.write('<hr><hr>');
+        }else{
+            document.write('<b>Você acionou o botão Cancelar.</b>');
+            document.write('<hr><hr>');
+        }
+
+        do {
+            js_resposta= window.confirm('Continuar?');
+            document.write('Você acionou o botão OK.');
+            document.write('<hr><hr>');
+        } while (js_resposta==true);
+        
+        document.write('Você acionou o botão Cancelar.');
+        
+
+    </script>
+</body>
+</html>
